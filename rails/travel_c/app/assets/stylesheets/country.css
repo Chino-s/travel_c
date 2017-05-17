@@ -1,0 +1,178 @@
+section h2 {
+  font-size: 26px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+section:not(.call-to-action) h2:after {
+  display: block;
+  font-size: 18px;
+  color: #aaa;
+  padding-top: 10px;
+}
+
+
+/* countrytitle */
+
+.container {
+  margin: 0 40px;
+}
+
+.container img {
+  margin: 120px 0 0 0;
+}
+
+.countrytitle h1 {
+	padding: .75em 0;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+  color: #ccc
+}
+
+.countrytitle img {
+  width: 795px;
+  height: 90px;
+}
+
+/* info */
+
+section.info {
+  position: relative;
+  width: 820px;
+  height: 280px;
+  padding: 20px 50px 50px 50px;
+  margin: 0 auto;
+}
+
+table.type03 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-left: 3px solid #369;
+    margin: 50px 60px 70px 50px;
+    float: left;
+  }
+
+table.type03 th {
+    width: 147px;
+    padding: 20px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #153d73;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+table.type03 td {
+    width: 150px;
+    padding: 10px;
+    vertical-align: top;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+.map img {
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  padding-top: 50px;
+}
+
+
+/* info2 */
+
+.info2 h2:after {
+  content: '- Food -'
+}
+
+
+.food img {
+  border-radius: 50%;
+  border: 10px solid #fff;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -60px;
+
+}
+
+.food {
+  background: #ffffe0;
+  width: 250px;
+  box-sizing: border-box;
+  padding: 65px 20px 26px;
+  position: relative;
+}
+
+.food h3 {
+  text-align: center;
+}
+
+.info2 .container {
+  margin: 100px auto;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info2 h2 {
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+section.info2 {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+/* spot */
+
+.spot h2:after {
+  content: '- spot -'
+}
+
+.spot .container {
+  padding-bottom: 40px;
+  width: 780px;
+  margin: 20px auto 50px;
+}
+
+.spot img {
+  width: 780px;
+  height: 400px;
+  margin: 20px auto;
+}
+
+/* sns */
+
+.sns h2:after {
+  content: '- SNS -'
+}
+
+.sample img {
+  width: 780px;
+  height: 600px;
+  margin: 20px auto;
+}
+
+.sample {
+  width: 800px;
+  margin: 50px auto;
+}
+
+/* back */
+
+section.back i {
+  margin: 0 5px 30px 50px;
+}
+
+section.back h3 {
+  position:relative;
+  top:-3px;
+
+}

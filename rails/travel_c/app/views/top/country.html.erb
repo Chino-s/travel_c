@@ -1,0 +1,81 @@
+<section class="countrytitle">
+    <div class="container">
+      <%= image_tag("spain.png") %>
+      <h1>&emsp;スペイン（Spain）</h1>
+</div>
+</section>
+
+<section class="info">
+    <div class="info">
+      <table class="type03">
+    <tr>
+        <th scope="row">首都</th>
+        <td>マドリード</td>
+    </tr>
+    <tr>
+        <th scope="row">言語</th>
+        <td>スペイン語</td>
+    </tr>
+    <tr>
+        <th scope="row">通貨</th>
+        <td>ユーロ（€）</td>
+    </tr>
+    <tr>
+        <th scope="row">日本との時差</th>
+        <td>-7時間</td>
+    </tr>
+      </table>
+
+    <div class="map">
+      <%= image_tag("map.png") %>
+    </div>
+      </div>
+
+  </section>
+
+  <section class="info2">
+    <h2>食</h2>
+    <div class="container">
+      <div class="food">
+      <%= image_tag("アヒージョ.jpg", size: "100x100") %>
+      <h3>アヒージョ<br>(Ahijo)</h3>
+    </a>
+    </div>
+    <div class="food">
+      <%= image_tag("キッシュ.jpg", size: "100x100") %>
+      <h3>キッシュ<br>(Quiche)</h3>
+    </a>
+    </div>
+    <div class="food">
+      <%= image_tag("パエリア.jpg", size: "100x100") %>
+      <h3>パエリア<br>(Paella)</h3>
+    </a>
+    </div>
+
+    </div>
+  </section>
+
+  <section class="spot">
+    <h2>地域</h2>
+    <div class="container">
+      <div class="spot">
+        <%= image_tag("spot.png") %>
+      </div>
+    </div>
+  </section>
+
+  <section class="sns">
+    <h2>INSTA</h2>
+    <div class="container">
+      <div class="sample">
+        <%= image_tag("insta.png") %>
+      </div>
+    </div>
+  </section>
+
+ <section class="back">
+  <a href="">
+  <i class="fa fa-arrow-circle-left " aria-hidden="true"></i>
+  <%= menu_link_to "TOPに戻る", :top %>
+  </a>
+</section>
