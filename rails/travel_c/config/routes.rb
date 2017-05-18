@@ -6,4 +6,9 @@ TravelC::Application.routes.draw do
   get "top/country"
 
   get "top/city"
+
+  get "top/result"
+
+  get "top/food"
+
 end
