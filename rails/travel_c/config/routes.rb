@@ -3,6 +3,12 @@ TravelC::Application.routes.draw do
 
   get "top" => "top#top", as: "top"
 
+  get "lesson/:action(/:name)" => "lesson"
+
+  resources :countries do
+    collection { get "search" }
+  end
+
   get "top/country"
 
   get "top/city"
