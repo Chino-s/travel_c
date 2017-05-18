@@ -12,4 +12,10 @@ class TopController < ApplicationController
 
   def city
   end
+
+  def result
+  end
+
+  def food
+  end
 end
