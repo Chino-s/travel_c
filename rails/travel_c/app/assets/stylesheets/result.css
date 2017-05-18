@@ -1,0 +1,74 @@
+/* title */
+
+section.result {
+  margin: 100px 40px 0 40px;
+}
+
+.title h1 {
+	padding: .75em 0;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+  color: #ccc
+}
+
+/* raking */
+
+li {
+  padding: .75em 0;
+  border-bottom: 2px dashed #ccc;
+  color: #ccc
+}
+
+ul {
+  position: relative;
+  list-style: none;
+  width: 800px;
+  margin: 20px auto;
+}
+
+.ranking p {
+  padding: 10px 30px 30px 80px;
+  font-size: 30px;
+  color: #333;
+}
+
+.item-img img {
+  float: right;
+  height: 200px;
+  width: 400px;
+}
+
+.item-name1 p {
+  font-size: 20px;
+  position: relative;
+  width: 400px;
+}
+
+.item-name2 p {
+  font-size: 20px;
+  width: 400px;
+}
+
+.box1 {
+  position: relative;
+  width: 800px;
+
+}
+
+.box2 {
+  float: right;
+  width: 350px;
+  margin-top: -160px;
+}
+
+/* back */
+
+section.back i {
+  margin: 0 5px 30px 50px;
+}
+
+section.back h3 {
+  position:relative;
+  top:-3px;
+
+}

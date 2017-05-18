@@ -1,0 +1,44 @@
+<section class="result">
+    <div class="title">
+      <h1>&emsp;検索結果</h1>
+    </div>
+  </section>
+
+  <section class="raking">
+    <div class="contents">
+      <ul class="ranking">
+
+      <li class="no01">
+      <p class="item-img"><%= image_tag("a.png", size: "200x200") %></p>
+      <p class="item-name"><i class="fa fa-star fa-2x" style="color: gold" aria-hidden="true"></i>スペイン</p>
+      </li>
+      <li class="no02">
+      <p class="item-img"><%= image_tag("b.png", size: "200x200") %></p>
+      <p class="item-name"><i class="fa fa-star fa-2x" style="color: silver" aria-hidden="true"></i>フランス</p>
+      </li>
+
+      <li class="no03">
+      <p class="item-img"><%= image_tag("c.png", size: "200x200") %></p>
+      <p class="item-name"><i class="fa fa-star fa-2x" style="color: #ac6b25" aria-hidden="true"></i>イギリス</p>
+      </li>
+
+      <li class="no04">
+      <div class="box1">
+      <p class="item-name1"><i class="fa fa-star" style="color: yellow" aria-hidden="true"></i>イタリア</p>
+      </div>
+      <div class="box2">
+      <p class="item-name2"><i class="fa fa-star" style="color: yellow" aria-hidden="true"></i>スイス</p>
+      </div>
+      </li>
+
+      </ul>
+    </div>
+
+   </section>
+
+  <section class="back">
+   <a href="">
+   <i class="fa fa-arrow-circle-left " aria-hidden="true"></i>
+   <%= menu_link_to "TOPに戻る", :top %>
+   </a>
+ </section>
