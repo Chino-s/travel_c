@@ -4,7 +4,7 @@
 
 <%= form_tag :search_countries, method: :get do %>
 <p><%= text_field_tag "q", params[:q] %>
-<%= submit_tag "国名検索" %></p>
+<%= submit_tag "検索" %></p>
 <% end %>
 
 <% if @countries.present? %>

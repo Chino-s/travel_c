@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20170518045525) do
+ActiveRecord::Schema.define(:version => 20170519090030) do
 
   create_table "countries", :force => true do |t|
     t.string   "name",            :null => false
@@ -21,6 +21,22 @@ ActiveRecord::Schema.define(:version => 20170518045525) do
     t.integer  "popular_ranking"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.string   "imagephoto"
+  end
+
+  create_table "currencies", :force => true do |t|
+    t.string   "name",       :null => false
+    t.integer  "exchange",   :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "prices", :force => true do |t|
+    t.integer  "country_id",  :null => false
+    t.integer  "currency_id", :null => false
+    t.integer  "water_price", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end
