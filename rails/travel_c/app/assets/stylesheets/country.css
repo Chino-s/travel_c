@@ -73,7 +73,7 @@ table.type03 td {
     border-bottom: 1px solid #ccc;
   }
 
-.map img {
+.map iframe {
   display: inline-block;
   width: 300px;
   height: 250px;
@@ -117,6 +117,10 @@ table.type03 td {
   width: 800px;
   display: flex;
   justify-content: space-between;
+}
+
+.food a {
+  text-align: right;
 }
 
 .info2 h2 {
