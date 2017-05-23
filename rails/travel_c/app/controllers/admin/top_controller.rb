@@ -1,6 +1,8 @@
 # coding: utf-8
 
 class Admin::TopController < ApplicationController
+  before_action :authenticate_user!
+
   def index
   end
 
