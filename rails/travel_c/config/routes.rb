@@ -1,32 +1,36 @@
 TravelC::Application.routes.draw do
+  get "food/index"
+
+  get "result/index"
+
+  get "cities/index"
+
   devise_for :users
 
+  get "top" => "top#index", as: "top"
   root to: "top#index"
 
-  get "top" => "top#top", as: "top"
-
-  get "lesson/:action(/:name)" => "lesson"
-
+  get "/countries/:id", to: "countries#show", as: "country"
   resources :countries do
     collection { get "search" }
   end
 
-  get "top/country"
+  get "/cities/:id", to: "cities#show", as: "city"
+  resources :cities do
+    collection { get "search" }
+  end
 
-  get "top/city"
 
-  get "top/result"
+  get "/result", to: "result#index"
 
-  get "top/food"
-
-  root to: "home#index"
+  get "/food", to: "food#index"
 
   namespace :admin do
     root to: "top#index"
     resources :members do
       collection { get "search" }
     end
-    resources :articles
   end
+
 
 end
