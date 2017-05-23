@@ -34,4 +34,18 @@ TravelC::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # mailer setting
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.action_mailer.smtp_settings = {
+  :enable_starttls_auto => true,
+  :address => "smtp.gmail.com",
+  :port => 587,
+  :domain => 'smtp.gmail.com',
+  :user_name => Settings.gmail[:user_name], #gmailアドレス
+  :password => Settings.gmail[:password], #gmailパスワード
+  :authentication => 'login',
+  }
+
 end
