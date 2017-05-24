@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.22.5'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -28,6 +28,15 @@ gem 'devise'
 gem 'omniauth-twitter'
 
 gem 'config'
+
+group :development, :test do
+  
+  gem 'factory_girl_rails', '~> 4.2.1'
+end
+
+ gem 'rspec', '3.4.0'
+
+ gem 'rake', '~> 11.0.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
