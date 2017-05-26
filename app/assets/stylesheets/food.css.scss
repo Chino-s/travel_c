@@ -1,0 +1,39 @@
+/* title */
+
+section.result {
+  margin: 100px 40px 0 40px;
+}
+
+.title h1 {
+	padding: .75em 0;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+  color: #ccc
+}
+
+/* food */
+
+.worldfood {
+  padding-bottom: 0;
+  width: 780px;
+  margin: 50px auto 50px;
+}
+
+
+.worldfood img {
+  width: 600px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+/* back */
+
+section.back i {
+  margin: 0 5px 30px 50px;
+}
+
+section.back h3 {
+  position:relative;
+  top:-3px;
+
+}

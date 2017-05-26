@@ -1,0 +1,25 @@
+<% @page_title = "地域一覧" %>
+
+<h1><%= @page_title %></h1>
+
+<%= form_tag :search_cities, method: :get do %>
+<p><%= text_field_tag "q", params[:q] %>
+<%= submit_tag "検索" %></p>
+<% end %>
+
+<% if @cities.present? %>
+<table class="list">
+  <tr>
+    <th>No.</th>
+    <th>地域</th>
+  </tr>
+  <% @cities.each do |country| %>
+  <tr>
+    <td align="right"><%= cities.id %></td>
+    <td><%= link_to city.name, city %></td>
+  </tr>
+  <% end %>
+</table>
+<% else %>
+<p>地域情報がありません。</p>
+<% end %>
