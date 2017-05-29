@@ -1,3 +1,3 @@
-class Traffics < ActiveRecord::Base
+class Traffic < ActiveRecord::Base
   # attr_accessible :title, :body
 end

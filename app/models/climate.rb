@@ -1,3 +1,3 @@
-class Airports < ActiveRecord::Base
+class Climate < ActiveRecord::Base
   # attr_accessible :title, :body
 end

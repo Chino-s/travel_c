@@ -1,3 +1,3 @@
-class Spots < ActiveRecord::Base
+class Area < ActiveRecord::Base
   # attr_accessible :title, :body
 end
