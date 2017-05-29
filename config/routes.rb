@@ -5,8 +5,6 @@ TravelC::Application.routes.draw do
 
   get "cities/index"
 
-  devise_for :users
-
   get "top" => "top#index", as: "top"
   root to: "top#index"
 
@@ -24,13 +22,6 @@ TravelC::Application.routes.draw do
   get "/result", to: "result#index"
 
   get "/food", to: "food#index"
-
-  namespace :admin do
-    root to: "top#index"
-    resources :members do
-      collection { get "search" }
-    end
-  end
 
 
 end

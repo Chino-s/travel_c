@@ -24,13 +24,8 @@ gem 'jquery-rails'
 
 gem 'test-unit', '~> 3.0'
 
-gem 'devise'
-gem 'omniauth-twitter'
-
-gem 'config'
-
 group :development, :test do
-  
+
   gem 'factory_girl_rails', '~> 4.2.1'
 end
 

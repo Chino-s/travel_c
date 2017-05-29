@@ -1,5 +1,5 @@
 class Country < ActiveRecord::Base
-  attr_accessible :name, :language, :capital, :area_id, :popular_ranking
+  attr_accessible :name, :language, :capital, :area_id, :popular_ranking, :imagephoto, :googlemap
 
   class << self
       def search(query)
