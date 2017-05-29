@@ -1,7 +1,7 @@
 TravelC::Application.routes.draw do
-  get "food/index"
+  get "foods/index"
 
-  get "result/index"
+  get "results/index"
 
   get "cities/index"
 
@@ -19,9 +19,9 @@ TravelC::Application.routes.draw do
   end
 
 
-  get "/result", to: "result#index"
+  get "/results", to: "results#index"
 
-  get "/food", to: "food#index"
+  get "/foods", to: "foods#index"
 
 
 end
