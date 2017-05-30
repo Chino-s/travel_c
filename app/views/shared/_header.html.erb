@@ -1,9 +1,9 @@
-<%= image_tag("logo.png", size: "260x100", alt: "travelc") %>
+<section class="header">
 
 <div class="menubar">
 <%= menu_link_to "TOP", :top %> &nbsp;|&nbsp;
 <%= menu_link_to "ルーレット", "#" %>&nbsp;|&nbsp;
-<%= menu_link_to "国一覧", :countries %>&nbsp;|&nbsp;
+<%= menu_link_to "国一覧", "countries#show" %>&nbsp;|&nbsp;
 <%= menu_link_to "地域一覧", :cities %>&nbsp;|&nbsp;
 <%= menu_link_to "おすすめ", "#" %>&nbsp;|&nbsp;
 <%= menu_link_to "料理一覧", :foods %>&nbsp;|&nbsp;
@@ -12,3 +12,7 @@
 <%= menu_link_to "旅行計画書２", "#" %>&nbsp;|&nbsp;
 <%= menu_link_to "管理者用画面", "#" %>
 </div>
+
+<%= image_tag("logo.png", size: "260x100", alt: "travelc") %>
+
+</section>
