@@ -1,9 +1,4 @@
 TravelC::Application.routes.draw do
-  get "foods/index"
-
-  get "results/index"
-
-  get "cities/index"
 
   get "top" => "top#index", as: "top"
   root to: "top#index"
@@ -18,10 +13,11 @@ TravelC::Application.routes.draw do
     collection { get "search" }
   end
 
+  get "/foods/:id", to: "foods#show", as: "food"
+  resources :foods do
+    collection { get "search" }
+  end
 
-  get "/results", to: "results#index"
-
-  get "/foods", to: "foods#index"
-
+  resources :results, :only => [:index]
 
 end
