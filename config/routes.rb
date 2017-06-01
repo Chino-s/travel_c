@@ -1,7 +1,7 @@
 TravelC::Application.routes.draw do
 
 
-  get "top" => "top#index", as: "top"
+  resources :top, :only => [:index], as: "top"
   root to: "top#index"
 
   resources :countries, :only => [:index, :show] do
