@@ -29,4 +29,28 @@ RSpec.describe CountriesController, :type => :controller do
 
   end
 
+
+  describe  'GET #show' do
+
+    let(:request) { get :show, { id: @country_1 } }
+    before :each do  #'add data in table'
+      @country_1 = FactoryGirl.create(:country)
+    end
+
+    context 'have data' do
+      it 'check find data' do
+        request
+        expect(assigns[:country]).to eq @country_1
+      end
+    end
+
+    context 'show data' do
+      it 'show data template' do
+        request
+        expect(response).to render_template :show
+      end
+    end
+
+  end
+
 end
