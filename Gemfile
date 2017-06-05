@@ -31,6 +31,8 @@ end
 
  gem 'rspec', '3.4.0'
 
+ gem 'rspec-rails'
+
  gem 'rake', '~> 11.0.0'
 
 # To use ActiveModel has_secure_password
