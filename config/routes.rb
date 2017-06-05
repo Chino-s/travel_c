@@ -2,7 +2,7 @@ TravelC::Application.routes.draw do
 
   root to: "top#index"
 
-  resources :countries, :only => [:index, :show] do
+  resources :countries, :only => [:index, :show, :edit, :destroy] do
     collection { get "search" }
   end
 
