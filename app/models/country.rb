@@ -9,6 +9,6 @@ class Country < ActiveRecord::Base
                   "%#{query}%")
         end
       rel
-    end
-   end
+      end
+  end
 end
