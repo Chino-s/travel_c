@@ -1,0 +1,40 @@
+/* table */
+
+section {
+  position: relative;
+  width: 820px;
+  padding: 20px 50px 50px 50px;
+  margin: 0 auto;
+}
+
+table.attr {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-left: 3px solid #369;
+    margin: 50px auto;
+    table-layout: auto;
+  }
+
+table.attr th {
+    width: 150px;
+    padding: 20px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #153d73;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+table.attr td {
+    width: 150px;
+    padding: 20px;
+    vertical-align: top;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+section.ed {
+  text-align: center;
+}

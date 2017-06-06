@@ -13,9 +13,11 @@
 <body>
 
   <div id="container">
+
     <div id="header">
   <%= render "shared/header" %>
     </div>
+
     <div id="content">
   <% if flash.notice %>
   <p class="notice"><%= flash.notice %></p>
@@ -23,12 +25,15 @@
 
   <%= yield %>
     </div>
+
     <div id="content2">
   <%= render "shared/content2" %>
     </div>
+
     <div id="footer">
   <%= render "shared/footer" %>
     </div>
+    
   </div>
 
 </body>
