@@ -1,0 +1,43 @@
+<% @page_title = "名所詳細" %>
+
+<h1><%= @page_title %></h1>
+
+<table class="attr">
+  <tr>
+    <th width="150">ID</th>
+    <td><%= @spot.id %></td>
+  </tr>
+  <tr>
+    <th>国名</th>
+    <td><%= @spot.name %></td>
+  </tr>
+  <tr>
+    <th>エリアID</th>
+    <td><%= @spot.area_id %></td>
+  </tr>
+  <tr>
+    <th>国ID</th>
+    <td><%= @spot.country_id %></td>
+  </tr>
+  <tr>
+    <th>国名</th>
+    <td><%= @spot.country_id %></td>
+  </tr>
+  <tr>
+    <th>名所カテゴリーID</th>
+    <td><%= @spot.spot_category_id %></td>
+  </tr>
+  </table>
+
+  <section class="ed">
+  <tr>
+    <td>
+      <%= link_to "編集", edit_admin_spot_path(@spot.id) %>
+      &ensp;|&ensp;
+      <%= link_to "削除", [:admin, @spot], method: :delete,
+          confirm: "本当に削除しますか?" %>
+    </td>
+  </tr>
+</section>
+
+<p><%= link_to "名所一覧に戻る", admin_spots_path(@spots) %></p>

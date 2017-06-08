@@ -1,0 +1,29 @@
+<% @page_title = "地域一覧" %>
+
+<h1><%= @page_title %></h1>
+
+<p><%= link_to "地域の新規登録", "#" %></p>
+
+<table class="list2">
+  <tr>
+    <th>ID.</th>
+    <th>地域名</th>
+    <th>修正</th>
+  </tr>
+
+  <tr>
+    <td align="right"><%= "city.id" %></td>
+    <td><%= link_to "city.name", "#" %></td>
+    <td style="display:inline-flex">
+      <%= link_to "詳細", "#" %>
+      &ensp;|&ensp;
+      <%= link_to "編集", "#" %>
+      &ensp;|&ensp;
+      <%= link_to "削除", "#", method: :delete,
+          confirm: "本当に削除しますか?" %>
+    </td>
+  </tr>
+
+</table>
+
+<br><br><br>

@@ -1,0 +1,31 @@
+<% @page_title = "名所一覧" %>
+
+<h1><%= @page_title %></h1>
+
+<p><%= link_to "名所の新規登録", :new_admin_spot %></p>
+
+<table class="list2">
+  <tr>
+    <th>ID.</th>
+    <th>名所名</th>
+    <th>修正</th>
+  </tr>
+
+  <% @spots.each do |spot| %>
+  <tr>
+    <td align="right"><%= spot.id %></td>
+    <td><%= link_to spot.name, admin_spot_path(spot.id) %></td>
+    <td style="display:inline-flex">
+      <%= link_to "詳細", admin_spot_path(spot.id) %>
+      &ensp;|&ensp;
+      <%= link_to "編集", edit_admin_spot_path(spot.id) %>
+      &ensp;|&ensp;
+      <%= link_to "削除", [:admin, spot], method: :delete,
+          confirm: "本当に削除しますか?" %>
+    </td>
+  </tr>
+  <% end %>
+
+</table>
+
+<br><br><br>

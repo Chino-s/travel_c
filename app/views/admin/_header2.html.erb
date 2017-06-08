@@ -1,0 +1,24 @@
+<section class="header">
+
+  <div class="menubar1">
+  <%= menu_link_to "TOP", :root %> &nbsp;|&nbsp;
+  <%= menu_link_to "ルーレット", "#" %>&nbsp;|&nbsp;
+  <%= menu_link_to "国一覧", :countries %>&nbsp;|&nbsp;
+  <%= menu_link_to "地域一覧", :cities %>&nbsp;|&nbsp;
+  <%= menu_link_to "おすすめ", "#" %>&nbsp;|&nbsp;
+  <%= menu_link_to "料理一覧", :foods %>&nbsp;|&nbsp;
+  <%= menu_link_to "名所一覧", "#" %>&nbsp;|&nbsp;
+  <%= menu_link_to "旅行計画書", "#" %>&nbsp;|&nbsp;
+  <%= menu_link_to "旅行計画書２", "#" %>
+  </div>
+  <div class="menubar2">
+  <nobr> 管理者ページ </nobr>&nbsp;&nbsp;=>&nbsp;&nbsp;&nbsp;
+  <%= menu_link_to "国一覧", :admin_countries %> &nbsp;|&nbsp;
+  <%= menu_link_to "地域一覧", :admin_cities %>&nbsp;|&nbsp;
+  <%= menu_link_to "名所一覧", :admin_spots %>&nbsp;|&nbsp;
+  <%= menu_link_to "料理一覧", :admin_foods %>&nbsp;|&nbsp;
+  </div>
+
+  <%= image_tag("logo.png", size: "260x100", alt: "travelc") %>
+
+  </section>

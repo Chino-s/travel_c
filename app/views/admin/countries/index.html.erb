@@ -2,7 +2,7 @@
 
 <h1><%= @page_title %></h1>
 
-<p><%= link_to "会員の新規登録", :new_admin_country %></p>
+<p><%= link_to "国の新規登録", :new_admin_country %></p>
 
 <table class="list2">
   <tr>
@@ -20,7 +20,7 @@
       &ensp;|&ensp;
       <%= link_to "編集", edit_admin_country_path(country.id) %>
       &ensp;|&ensp;
-      <%= link_to "削除", @country, method: :delete,
+      <%= link_to "削除", [:admin, country], method: :delete,
           confirm: "本当に削除しますか?" %>
     </td>
   </tr>

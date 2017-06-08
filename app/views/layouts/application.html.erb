@@ -14,9 +14,15 @@
 
   <div id="container">
 
+<% if admin_view? %>
+    <div id="header2">
+  <%= render "admin/header2" %>
+    </div>
+<% else %>
     <div id="header">
   <%= render "shared/header" %>
     </div>
+<% end %>
 
     <div id="content">
   <% if flash.notice %>
@@ -33,7 +39,7 @@
     <div id="footer">
   <%= render "shared/footer" %>
     </div>
-    
+
   </div>
 
 </body>

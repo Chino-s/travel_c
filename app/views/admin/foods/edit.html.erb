@@ -1,0 +1,30 @@
+<% @page_title = "料理情報の編集" %>
+
+<h1><%= @page_title %></h1>
+
+<%= form_for([:admin,@food]) do |f| %>
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :country_id %><br>
+        <%= f.number_field(:country_id, in: 1..20, step: 1) %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :food_category_id %><br>
+        <%= f.radio_button :food_category_id, 1 %> 和食
+        <%= f.radio_button :food_category_id, 2 %> 中華
+        <%= f.radio_button :food_category_id, 3 %> 洋食
+        <%= f.radio_button :food_category_id, 4 %> 東南アジア
+        <%= f.radio_button :food_category_id, 5 %> その他
+      </div>
+<br>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+<% end %>
+
+<p><%= link_to "料理の詳細に戻る", admin_food_path(@food) %></p>

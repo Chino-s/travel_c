@@ -17,8 +17,12 @@ TravelC::Application.routes.draw do
   resources :results, :only => [:index]
 
   namespace :admin do
-    resources :countries 
+    resources :countries
+    resources :spots
+    resources :cities
+    resources :foods
   end
+
 
   resources :admin, :only => [:index], :as => :admin
 

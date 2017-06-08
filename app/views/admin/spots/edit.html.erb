@@ -1,0 +1,26 @@
+<% @page_title = "名所情報の編集" %>
+
+<h1><%= @page_title %></h1>
+
+<%= form_for([:admin,@spot]) do |f| %>
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :spot_category_id %><br>
+        <%= f.number_field(:spot_category_id, in: 1..20, step: 1) %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :country_id %><br>
+        <%= f.number_field(:country_id, in: 1..20, step: 1) %>
+      </div>
+<br>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+<% end %>
+
+<p><%= link_to "名所の詳細に戻る", admin_spot_path(@spot) %></p>

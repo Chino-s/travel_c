@@ -1,0 +1,35 @@
+<% @page_title = "料理詳細" %>
+
+<h1><%= @page_title %></h1>
+
+<table class="attr">
+  <tr>
+    <th width="150">ID</th>
+    <td><%= @food.id %></td>
+  </tr>
+  <tr>
+    <th>料理名</th>
+    <td><%= @food.name %></td>
+  </tr>
+  <tr>
+    <th>国ID</th>
+    <td><%= @food.country_id %></td>
+  </tr>
+  <tr>
+    <th>料理カテゴリーID</th>
+    <td><%= @food.food_category_id %></td>
+  </tr>
+  </table>
+
+  <section class="ed">
+  <tr>
+    <td>
+      <%= link_to "編集", edit_admin_food_path(@food.id) %>
+      &ensp;|&ensp;
+      <%= link_to "削除", [:admin, @food], method: :delete,
+          confirm: "本当に削除しますか?" %>
+    </td>
+  </tr>
+</section>
+
+<p><%= link_to "料理一覧に戻る", admin_foods_path(@foods) %></p>
