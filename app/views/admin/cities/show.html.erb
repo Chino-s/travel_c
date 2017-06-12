@@ -1,0 +1,43 @@
+<% @page_title = "都市詳細" %>
+
+<h1><%= @page_title %></h1>
+
+<table class="attr">
+  <tr>
+    <th width="150">ID</th>
+    <td><%= @city.id %></td>
+  </tr>
+  <tr>
+    <th>都市名</th>
+    <td><%= @city.name %></td>
+  </tr>
+  <tr>
+    <th>エリアID</th>
+    <td><%= @city.area_id %></td>
+  </tr>
+  <tr>
+    <th>国ID</th>
+    <td><%= @city.country_id %></td>
+  </tr>
+  <tr>
+    <th>国名</th>
+    <td><%= @city.country.name %></td>
+  </tr>
+  <tr>
+    <th>世界都市ランキング</th>
+    <td><%= @city.city_ranking %></td>
+  </tr>
+  </table>
+
+  <section class="ed">
+  <tr>
+    <td>
+      <%= link_to "編集", edit_admin_city_path(@city.id) %>
+      &ensp;|&ensp;
+      <%= link_to "削除", [:admin, @city], method: :delete,
+          confirm: "本当に削除しますか?" %>
+    </td>
+  </tr>
+</section>
+
+<p><%= link_to "都市一覧に戻る", admin_cities_path(@cities) %></p>
