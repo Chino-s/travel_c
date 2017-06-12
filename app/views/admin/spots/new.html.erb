@@ -1,0 +1,33 @@
+<% @page_title = "名所情報の新規登録" %>
+
+<h1><%= @page_title %></h1>
+
+<%= form_for([:admin,@spot]) do |f| %>
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :area_id %><br>
+        <%= f.number_field(:area_id, in: 1..8, step: 1) %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :country_id %><br>
+        <%= f.number_field(:country_id, in: 1..20, step: 1) %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :spot_category_id %><br>
+        <%= f.radio_button :spot_category_id, 1 %> 世界遺産
+        <%= f.radio_button :spot_category_id, 2 %> 海・ビーチ
+        <%= f.radio_button :spot_category_id, 3 %> 教会・寺・神社
+        <%= f.radio_button :spot_category_id, 4 %> 美術館・博物館
+        <%= f.radio_button :spot_category_id, 5 %> 遊園地
+      </div>
+<br>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+<% end %>

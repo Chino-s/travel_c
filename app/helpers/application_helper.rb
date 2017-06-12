@@ -8,4 +8,11 @@ module ApplicationHelper
     link_to_unless_current(text, path) { content_tag(:span, text) }
   end
 
+  def admin_view?
+    controller.controller_path == 'admin/countries' ||
+    controller.controller_path == 'admin/spots'  ||
+    controller.controller_path == 'admin/cities' ||
+    controller.controller_path == 'admin/foods'
+  end
+
 end

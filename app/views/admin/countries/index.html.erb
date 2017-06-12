@@ -1,0 +1,31 @@
+<% @page_title = "国一覧" %>
+
+<h1><%= @page_title %></h1>
+
+<p><%= link_to "国の新規登録", :new_admin_country %></p>
+
+<table class="list2">
+  <tr>
+    <th>ID.</th>
+    <th>国名</th>
+    <th>修正</th>
+  </tr>
+
+  <% @countries.each do |country| %>
+  <tr>
+    <td align="right"><%= country.id %></td>
+    <td><%= link_to country.name, admin_country_path(country.id) %></td>
+    <td style="display:inline-flex">
+      <%= link_to "詳細", admin_country_path(country.id) %>
+      &ensp;|&ensp;
+      <%= link_to "編集", edit_admin_country_path(country.id) %>
+      &ensp;|&ensp;
+      <%= link_to "削除", [:admin, country], method: :delete,
+          confirm: "本当に削除しますか?" %>
+    </td>
+  </tr>
+  <% end %>
+
+</table>
+
+<br><br><br>

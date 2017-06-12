@@ -75,7 +75,16 @@ div#header {
   border-bottom: 2px solid #ccc;
 }
 
-div#header img {
+div#header2 {
+  margin: 5px auto;
+  border-bottom: 2px solid #ccc;
+}
+
+div#header#header2 img {
+  margin: 10px 10px;
+}
+
+div#header2 img {
   margin: 10px 10px;
 }
 
@@ -91,12 +100,36 @@ div#footer {
 
 /* メニューバー */
 div.menubar {
+  width: 645px;
   padding: 2px;
   background-color: #ccc;
   color: #fff;
   font-size: 80%;
   padding: 8px 16px;
-  margin: 40px 15px 20px 15px;
+  margin: 40px 15px 0 15px;
+  float: right;
+}
+
+/* メニューバー1 */
+div.menubar1 {
+  width: 560px;
+  padding: 2px;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 80%;
+  padding: 8px 16px;
+  margin: 40px 15px 0 15px;
+  float: right;
+}
+
+/* メニューバー2 */
+div.menubar2 {
+  width: 560px;
+  background-color: #f88;
+  color: #fff;
+  font-size: 80%;
+  padding: 8px 16px;
+  margin: 0 15px ;
   float: right;
 }
 
@@ -118,6 +151,48 @@ div.menubar a:hover {
 /* メニューバーのリンク（現在のページ） */
 div.menubar span {
   color: #f88;
+  font-weight: bold;
+}
+
+/* メニューバーのリンク */
+div.menubar2 a { text-decoration: none; }
+
+/* メニューバーのリンク（未訪問） */
+div.menubar2 a:link { color: #fff; }
+
+/* メニューバーのリンク（訪問済） */
+div.menubar2 a:visited { color: #fff; }
+
+/* メニューバーのリンク（マウスを合わせたとき） */
+div.menubar2 a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/* メニューバーのリンク（現在のページ） */
+div.menubar2 span {
+  color: #ccc;
+  font-weight: bold;
+}
+
+/* メニューバーのリンク */
+div.menubar1 a { text-decoration: none; }
+
+/* メニューバーのリンク（未訪問） */
+div.menubar1 a:link { color: #fff; }
+
+/* メニューバーのリンク（訪問済） */
+div.menubar1 a:visited { color: #fff; }
+
+/* メニューバーのリンク（マウスを合わせたとき） */
+div.menubar1 a:hover {
+  color: #f88;
+  text-decoration: underline;
+}
+
+/* メニューバーのリンク（現在のページ） */
+div.menubar1 span {
+  color: #ccc;
   font-weight: bold;
 }
 

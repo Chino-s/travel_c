@@ -1,0 +1,35 @@
+<% @page_title = "国詳細" %>
+
+<h1><%= @page_title %></h1>
+
+<table class="attr">
+  <tr>
+    <th width="150">ID</th>
+    <td><%= @country.id %></td>
+  </tr>
+  <tr>
+    <th>国名</th>
+    <td><%= @country.name %></td>
+  </tr>
+  <tr>
+    <th>首都</th>
+    <td><%= @country.capital %></td>
+  </tr>
+  <tr>
+    <th>言語</th>
+    <td><%= @country.language %></td>
+  </tr>
+  </table>
+
+  <section class="ed">
+  <tr>
+    <td>
+      <%= link_to "編集", edit_admin_country_path(@country.id) %>
+      &ensp;|&ensp;
+      <%= link_to "削除", [:admin, @country], method: :delete,
+          confirm: "本当に削除しますか?" %>
+    </td>
+  </tr>
+</section>
+
+<p><%= link_to "国の一覧に戻る", admin_countries_path(@countries) %></p>
