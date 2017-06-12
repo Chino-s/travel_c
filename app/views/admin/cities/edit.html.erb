@@ -1,0 +1,31 @@
+<% @page_title = "都市情報の編集" %>
+
+<h1><%= @page_title %></h1>
+
+<%= form_for([:admin,@city]) do |f| %>
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :area_id %><br>
+        <%= f.number_field(:area_id, in: 1..20, step: 1) %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :country_id %><br>
+        <%= f.number_field(:country_id, in: 1..20, step: 1) %>
+      </div>
+<br>
+      <div class="field">
+        <%= f.label :city_ranking %><br>
+        <%= f.text_field (:city_ranking) %>
+      </div>
+<br>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+<% end %>
+
+<p><%= link_to "都市の詳細に戻る", admin_city_path(@city) %></p>
