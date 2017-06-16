@@ -27,8 +27,7 @@ class Admin::CountriesController < ApplicationController
 
   def update
     @country = Country.find(params[:id])
-    @country.assign_attributes(params[:country], :as => :admin)
-      if @country.save
+      if @country.update_attributes(name: params["country"]["name"],capital: params["country"]["capital"])
         redirect_to [:admin, @country], notice: 'Country was successfully updated.'
       else
         render 'edit'
